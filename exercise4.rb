@@ -21,7 +21,6 @@ class AdvancingCharsScramble
     contents = scrambled_chars.join
     return contents
   end
-
 end
 
 class UnscrambleAdvancingCharsScramble
@@ -57,18 +56,18 @@ def entry(contents)
   ScrambledDiary.new(contents)
 end
 
-def advancing_chars(steps)
+def scramble_by_advancing_chars(steps)
   AdvancingCharsScramble.new(steps)
 end
 
-def unscramble_advancing_chars(steps)
+def unscramble_by_advancing_chars(steps)
   UnscrambleAdvancingCharsScramble.new(steps)
 end
 
-def reverse
+def scramble_by_reversing_chars
   Reverse.new
 end
 
-def undo_reverse
+def unscramble_by_reversing_chars
   UnscrambleReverse.new
 end
